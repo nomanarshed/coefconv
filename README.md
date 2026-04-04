@@ -243,7 +243,7 @@ The most meaningful predictors satisfy all criteria simultaneously.
 
 If you use `coefconv` in published research, please cite:
 
-> Arshed, N. ([Year]). *coefconv: Comprehensive Marginal Effects for Stata.*
+> Arshed, N. (2026). *coefconv: Comprehensive Marginal Effects for Stata.*
 > Statistical Software Components [number], Boston College Department of Economics.
 > Available from https://ideas.repec.org/c/boc/bocode/[number].html
 
