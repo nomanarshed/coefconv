@@ -1,0 +1,51 @@
+v 3
+d 'COEFCONV': module to compute comprehensive marginal effects from regression coefficients
+d
+d  coefconv computes 26 marginal effect types for every predictor
+d  in the most recently estimated regression model, organized
+d  into 7 interpretation families: (1) raw and standardized
+d  slopes (beta, beta*, X-standardized, Y-standardized);
+d  (2) elasticity and semi-elasticities (point elasticity at
+d  means, X-semi-elasticity, Y-semi-elasticity); (3) basis-point
+d  and percentage-point effects; (4) relative and proportional
+d  effects; (5) variance-importance measures including Pratt's
+d  decomposition of R-squared; (6) discrete delta-Y effects from
+d  moving X from its median to each quantile; and (7) discrete
+d  change effects under growth-rate, IQR, full-range, SD, and
+d  custom delta-X scenarios. All inputs are drawn live from
+d  Stata's e() results and restricted to the estimation sample.
+d  Zero-order correlations are computed automatically for the
+d  Pratt decomposition.
+d
+d  Companion program coefconv_plot produces three named graphs:
+d  a standardized-slope forest plot with Cohen (1988) benchmarks,
+d  a Pratt R-squared bar chart identifying suppressor variables,
+d  and a per-variable discrete-effects ladder chart showing
+d  delta-Y in original Y units across nine realistic scenarios.
+d
+d  Compatible with regress, ivregress, areg, xtreg, and other
+d  estimators that store e(b), e(V), e(depvar), and e(sample).
+d
+d KW: marginal effects
+d KW: standardized coefficients
+d KW: elasticity
+d KW: semi-elasticity
+d KW: Pratt importance
+d KW: relative importance
+d KW: discrete change
+d KW: regression post-estimation
+d KW: forest plot
+d
+d Requires: Stata version 14
+d
+d Distribution-Date: 20260404
+d
+d Author: Noman Arshed, Sunway Business School, Sunway University
+d Support: email nouman.arshed@gmail.com
+d
+f coefconv.ado
+f coefconv_plot.ado
+f coefconv.sthlp
+f coefconv_plot.sthlp
+f coefconv_examples.do
+e
