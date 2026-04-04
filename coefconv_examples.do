@@ -2,8 +2,14 @@
 //  coefconv_examples.do
 //  Worked examples for coefconv and coefconv_plot v1.0.0
 //
-//  Requirements: coefconv.ado and coefconv_plot.ado must be installed.
-//  Run:  ssc install coefconv   OR place .ado files in your personal adopath.
+//  Requirements: install from SSC before running this file:
+//
+//    . ssc install coefconv, replace
+//
+//  SSC places files in the PLUS directory so that -ado update- can
+//  deliver future bug fixes automatically. Do not copy files manually
+//  into PERSONAL, which precedes PLUS on the adopath and will occlude
+//  any updated SSC version.
 // ============================================================================
 
 clear all

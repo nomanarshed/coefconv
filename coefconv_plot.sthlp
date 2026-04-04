@@ -262,9 +262,16 @@ open graphs type {cmd:graph dir}. To bring any graph to the front type
 {title:Dependencies}
 
 {pstd}
-Requires {helpb coefconv} to be in the adopath.
-Place both {cmd:coefconv.ado} and {cmd:coefconv_plot.ado} in the same
-directory (e.g. ~/ado/personal/ on Mac/Linux or C:\ado\personal\ on Windows).
+Requires {helpb coefconv}. Install the complete package from SSC:
+
+{phang2}{cmd:. ssc install coefconv, replace}{p_end}
+
+{pstd}
+This places both {cmd:coefconv.ado} and {cmd:coefconv_plot.ado} in the
+{cmd:PLUS} directory, where {cmd:ado update} can find and deliver bug fixes
+automatically. Do {it:not} copy files manually into {cmd:PERSONAL} — that
+directory precedes {cmd:PLUS} on the adopath and will occlude any
+SSC-updated version, preventing {cmd:ado update} from working correctly.
 
 {hline}
 {title:Author}

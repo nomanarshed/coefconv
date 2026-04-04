@@ -17,27 +17,20 @@ the estimation sample — no data preparation is required.
 
 ## Installation
 
-### From SSC (recommended)
-
 ```stata
 ssc install coefconv, replace
 ```
 
-### Manual
+`ssc install` places all files in Stata's `PLUS` directory.
+This matters: `PLUS` is managed by `ado update`, so whenever a bug fix
+or new version is released on SSC, running `ado update` will
+automatically download it.
 
-Download `coefconv.ado`, `coefconv_plot.ado`, `coefconv.sthlp`, and `coefconv_plot.sthlp`
-and place them in your personal adopath:
-
-| OS | Path |
-|---|---|
-| Windows | `C:\ado\personal\` |
-| Mac / Linux | `~/ado/personal/` |
-
-Or add the folder dynamically:
-
-```stata
-adopath + "path/to/folder"
-```
+> **Do not copy files manually into `PERSONAL`.**
+> The `PERSONAL` directory precedes `PLUS` on Stata's adopath.
+> Any files placed there will occlude the SSC copy, meaning
+> `ado update` can never deliver a bug fix — users would be
+> silently stuck on the old version even after updating.
 
 Verify installation:
 

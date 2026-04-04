@@ -421,6 +421,21 @@ is presented as a "growth scenario" (proportional expansion of X), while
 effect 10 is framed as "a 1% increase from the mean."
 
 {hline}
+{title:Installation}
+
+{pstd}
+Install from SSC:
+
+{phang2}{cmd:. ssc install coefconv, replace}{p_end}
+
+{pstd}
+SSC places files in the {cmd:PLUS} directory so that {cmd:ado update}
+can deliver future bug fixes automatically.
+Do {it:not} place files manually in {cmd:PERSONAL} — that directory
+precedes {cmd:PLUS} on the adopath and will occlude any updated SSC
+version, preventing {cmd:ado update} from working correctly.
+
+{hline}
 {title:Author}
 
 {pstd}
